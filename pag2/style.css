@@ -23,7 +23,7 @@ body {
     width: 100%;
     max-width: 600px; 
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 15px; /* utilização da propriedade border-radius */
     border: 1px solid rgba(111, 66, 193, 0.3);
     box-shadow: 0 0 80px rgba(111, 66, 193, 0.15); 
     text-align: center;
@@ -39,7 +39,7 @@ body {
     width: 100%; 
     max-width: 400px;
     height: auto; 
-    border-radius: 15px; 
+    border-radius: 15px; /* utilização da propriedade border-radius */
     object-fit: cover;
     border: 1px solid #6f42c1;
     box-shadow: 0 0 25px rgba(111, 66, 193, 0.7);
@@ -80,7 +80,7 @@ h1 {
     color: #b0b0b0;
     background: #1a1a1a;
     padding: 12px 24px;
-    border-radius: 5px;
+    border-radius: 5px; /* utilização da propriedade border-radius */
     font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
