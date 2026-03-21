@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #191625;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    position: relative;
+    color: #b0b0b0;
+}
+
+.perfil {
+    position: relative;
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 600px; 
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(111, 66, 193, 0.3);
+    box-shadow: 0 0 80px rgba(111, 66, 193, 0.15); 
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.perfil:hover {
+    box-shadow: 0 0 50px rgba(111, 66, 193, 0.4);
+    transform: translateY(-3px);
+}
+
+.imagem {
+    width: 100%; 
+    max-width: 400px;
+    height: auto; 
+    border-radius: 15px; 
+    object-fit: cover;
+    border: 1px solid #6f42c1;
+    box-shadow: 0 0 25px rgba(111, 66, 193, 0.7);
+    margin-bottom: 25px;
+    background-color: #000;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: clamp(1.5rem, 5vw, 2.2rem);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.descricaoPerfil {
+    color: #b0b0b0;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.redesSociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.redesSociais a {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    color: #b0b0b0;
+    background: #1a1a1a;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+.redesSociais a:hover {
+    background-color: #6f42c1;
+    border-color: #8c62d1;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(111, 66, 193, 0.8);
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .perfil {
+        padding: 20px;
+    }
+    
+    .redesSociais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redesSociais a {
+        max-width: 100%;
+        width: 100%;
+    }
+}
