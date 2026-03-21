@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0b14;
+    color: #b0b0b0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.container-blog {
+    width: 100%;
+    max-width: 800px;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 15px rgba(111, 66, 193, 0.6);
+}
+
+.subtitle {
+    color: #6f42c1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.lista-posts {
+    /* Propriedade solicitada: Remove as bolinhas padrão */
+    list-style: none; 
+}
+
+.post-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid #6f42c1;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 0 15px 15px 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.post-item:hover {
+    background: rgba(111, 66, 193, 0.08);
+    transform: translateX(10px);
+    box-shadow: -5px 0 20px rgba(111, 66, 193, 0.2);
+}
+
+.data {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    color: #6f42c1;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}
+
+.resumo {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.read-more {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #6f42c1;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.read-more:hover {
+    background: #6f42c1;
+    box-shadow: 0 0 10px #6f42c1;
+}
+
+.conteudo-completo {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.conteudo-completo p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+    .post-item:hover { transform: none; }
+}
