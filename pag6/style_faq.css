@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0b14;
+    color: #b0b0b0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.container-faq {
+    width: 100%;
+    max-width: 700px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
+}
+
+.subtitle {
+    color: #6f42c1;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+details {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(111, 66, 193, 0.2);
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background 0.4s ease;
+}
+
+details[open] {
+    background: rgba(111, 66, 193, 0.08);
+    border-color: rgba(111, 66, 193, 0.5);
+}
+
+summary {
+    padding: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    color: #fff;
+    cursor: pointer;
+    list-style: none; 
+    position: relative;
+    /* Transição suave para o texto */
+    transition: color 0.3s ease;
+}
+
+summary::-webkit-details-marker {
+    display: none; 
+}
+
+summary::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    color: #6f42c1;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(45deg);
+    color: #fff;
+}
+
+summary:hover {
+    color: #6f42c1;
+}
+
+.content {
+    padding: 0 20px 20px 20px;
+    line-height: 1.6;
+    animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navigation {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #b0b0b0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.back-btn:hover {
+    background: #6f42c1;
+    color: #fff;
+    border-color: #6f42c1;
+    box-shadow: 0 0 15px rgba(111, 66, 193, 0.5);
+}
