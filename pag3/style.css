@@ -1,0 +1,41 @@
+.center {
+    text-align: center;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 16px;
+    flex-wrap: wrap;
+}
+
+main {
+    padding: 0 10%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+footer img {
+    width: 200px;
+    max-width: 250px;
+    height: 200px;
+    border-radius: 8px;
+}
