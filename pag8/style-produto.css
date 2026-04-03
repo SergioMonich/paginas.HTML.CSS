@@ -1,0 +1,240 @@
+/* A propriedade box-sizing: border-box garante que padding e border 
+   não aumentem o tamanho final do elemento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0b14;
+    color: #b0b0b0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card do Produto */
+.product-card {
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(111, 66, 193, 0.3);
+    border-radius: 20px;
+    max-width: 800px;
+    width: 100%;
+    display: flex; /* Alinha imagem e info lado a lado */
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.image-box {
+    flex: 1;
+    background: #000;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.product-card:hover .product-img {
+    opacity: 1;
+}
+
+.product-info {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category {
+    font-family: 'Orbitron', sans-serif;
+    color: #6f42c1;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.price {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* ESTILIZAÇÃO DO BOTÃO COM BOX-SIZING */
+.buy-button {
+    box-sizing: border-box; /* Garante que o padding não estoure a largura */
+    width: 100%;
+    padding: 15px 30px;
+    background: transparent;
+    border: 2px solid #6f42c1;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buy-button:hover {
+    background: #6f42c1;
+    box-shadow: 0 0 20px rgba(111, 66, 193, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Seção de Testemunhos */
+.testimonials-section {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(111, 66, 193, 0.2);
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Garante responsividade */
+}
+
+.testimonial-card {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    background: rgba(111, 66, 193, 0.05);
+}
+
+/* Foto do Usuário Arredondada */
+.user-photo {
+    width: 150px;
+    height: 90px;
+    height: auto; 
+    border-radius: 15px; /* utilização da propriedade border-radius */
+    object-fit: cover;
+    border: 1px solid #6f42c1;
+    box-shadow: 0 0 15px rgba(111, 66, 193, 0.7);
+    margin-bottom: 25px;
+    background-color: #000;
+}
+
+.testimonial-card h3 {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.user-tag {
+    color: #6f42c1;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* ESTILIZAÇÃO DO BLOCKQUOTE */
+.testimonial-text {
+    /* Propriedade solicitada: define o texto como itálico */
+    font-style: italic; 
+    
+    color: #b0b0b0;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Aspas decorativas (detalhe moderno) */
+.testimonial-text::before {
+    content: '"';
+    font-size: 3rem;
+    color: rgba(111, 66, 193, 0.2);
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    font-family: serif;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 480px) {
+    .testimonial-card {
+        flex: none;
+        width: 100%;
+    }
+}
+
+.navigation {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #b0b0b0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.back-btn:hover {
+    background: #6f42c1;
+    color: #fff;
+    border-color: #6f42c1;
+    box-shadow: 0 0 15px rgba(111, 66, 193, 0.5);
+}    
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .product-card {
+        flex-direction: column;
+    }
+    .image-box {
+        height: 300px;
+    }
+}

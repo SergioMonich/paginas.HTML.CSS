@@ -16,28 +16,28 @@ body {
 
 .container-faq {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
 }
 
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 h1 {
     font-family: 'Orbitron', sans-serif;
     color: #fff;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-    text-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
+    letter-spacing: 4px;
+    text-shadow: 0 0 15px rgba(111, 66, 193, 0.6);
 }
 
 .subtitle {
     color: #6f42c1;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 0.8rem;
+    font-weight: bold;
     letter-spacing: 2px;
+    margin-top: 10px;
 }
 
 details {
@@ -64,19 +64,6 @@ summary {
     position: relative;
     /* Transição suave para o texto */
     transition: color 0.3s ease;
-}
-
-summary::-webkit-details-marker {
-    display: none; 
-}
-
-summary::after {
-    content: '+';
-    position: absolute;
-    right: 20px;
-    color: #6f42c1;
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
 }
 
 details[open] summary::after {
