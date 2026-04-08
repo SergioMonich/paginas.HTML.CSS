@@ -1,0 +1,6 @@
+body { background: #0d0b14; color: #fff; font-family: 'Roboto'; display: flex; justify-content: center; padding-top: 50px; }
+.setlist-box { background: #1a1a1a; padding: 30px; border-radius: 10px; width: 300px; }
+h1 { font-family: 'Orbitron'; font-size: 1.2rem; margin-bottom: 20px; color: #6f42c1; }
+label { display: block; margin-bottom: 10px; cursor: pointer; }
+.done { text-decoration: line-through; color: #555; }
+.voltar { display: block; margin-top: 20px; color: #6f42c1; text-decoration: none; font-size: 0.8rem; }
