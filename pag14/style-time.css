@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none; 
+    color: inherit;       
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #0d0b14;
     color: #b0b0b0;
     min-height: 100vh;
-    display: flex; /* Centraliza o conteúdo principal na tela */
+    display: flex; 
     justify-content: center;
     padding: 60px 20px;
 }
@@ -50,13 +55,13 @@ h1 {
     letter-spacing: 2px;
 }
 
-/* ESTILIZAÇÃO FLEXBOX DA EQUIPE */
+
 .team-container {
-    display: flex; /* Propriedade solicitada */
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    align-items: stretch; /* Faz os cards terem a mesma altura */
-    gap: 30px; /* Espaço entre os membros */
-    flex-wrap: wrap; /* Permite quebrar linha no mobile */
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; 
+    gap: 30px; 
+    flex-wrap: wrap;/*------------------*/
 }
 
 .member-card {
@@ -65,8 +70,8 @@ h1 {
     border: 1px solid rgba(111, 66, 193, 0.2);
     border-radius: 20px;
     padding: 40px 30px;
-    flex: 1; /* Faz os dois cards dividirem o espaço igualmente */
-    min-width: 300px; /* Impede que fiquem muito finos */
+    flex: 1; 
+    min-width: 300px; 
     max-width: 400px;
     text-align: center;
     transition: all 0.4s ease;
@@ -82,7 +87,7 @@ h1 {
     width: 150px;
     height: 150px;
     margin: 0 auto 25px;
-    border-radius: 50%; /* Mantendo o arredondamento solicitado no início */
+    border-radius: 50%; 
     padding: 5px;
     border: 2px solid #6f42c1;
     box-shadow: 0 0 15px rgba(111, 66, 193, 0.5);
@@ -93,7 +98,7 @@ h1 {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    filter: grayscale(50%); /* Toque dramático */
+    filter: grayscale(50%); 
     transition: 0.3s;
 }
 
@@ -124,10 +129,9 @@ h2 {
     color: #b0b0b0;
 }
 
-/* Responsividade Mobile */
 @media (max-width: 700px) {
     .team-container {
-        flex-direction: column; /* Empilha no celular */
+        flex-direction: column; /* empilha no celular */
         align-items: center;
     }
     .member-card {

@@ -1,6 +1,27 @@
-/* style_mapa.css */
-body { background: #0d0b14; color: #b0b0b0; font-family: 'Roboto'; padding: 50px; }
-.root-map li { list-style: none; margin-bottom: 10px; }
-.sub-map li { text-indent: 40px; margin-top: 5px; }
-a { color: #6f42c1; text-decoration: none; transition: 0.3s; }
-a:hover { color: #fff; text-shadow: 0 0 5px #6f42c1; }
+body {
+    background: #0d0b14;
+    color: #b0b0b0;
+    font-family: 'Roboto';
+    padding: 50px;
+}
+
+.root-map li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.sub-map li {
+    text-indent: 40px;
+    margin-top: 5px;
+}
+
+a {
+    color: #6f42c1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #6f42c1;
+}
